@@ -3,16 +3,17 @@
   <head>
     <title>Add Map</title>
     <link rel="stylesheet" type="text/css" href="../../public/css/map.css" />
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
     <script src="../../public/js/maps.js"></script>
   </head>
   <body>
     <h3>My Google Maps Demo</h3>
     <!--The div element for the map -->
-    <div id="jelpMapMarker"></div>
+    <div id="mapMarkers"></div>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCKiIqCdZGrVxx06LSbe7uG3zXOq1Cz5k&callback=jelpMapMarker&libraries=&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCKiIqCdZGrVxx06LSbe7uG3zXOq1Cz5k&callback=mapMarkers&libraries=&v=weekly"
       async
     ></script>
   </body>
